@@ -1,0 +1,778 @@
+/***************************** CSS GENERIC ********************************/
+body, pre, input, textarea, select{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+html, body, p,  td, form, input, select, textarea, pre, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	text-align: center;
+}
+
+a{
+	color: #000000;
+	text-decoration: underline;
+}
+
+a:hover{
+	text-decoration: none;
+
+}
+
+a img{
+	border-width: 0;
+}
+
+td{
+	vertical-align: top;
+}
+
+ul, ol{
+	/* Sinon les puces ne sont pas visible sous IE */
+	padding-left: 25px;
+}
+
+ul{
+	list-style-type: disc;
+}
+
+li{
+   line-height: 18px;
+}
+
+.cms_bloc ul, .cms_bloc ol{
+	position: relative;
+	padding: 5px 0;
+	line-height: 16px;
+}
+
+.cms_bloc ol{
+	list-style-position: inside;
+}
+
+.cms_bloc ul{
+	list-style-type: none;
+	_list-style-type: disc;
+}
+
+.cms_bloc ul li{
+	padding-left: 23px;
+	/* background: url(http://www.librairiesaintnicolas.com/default/CMS/css/common/../../images/wgs1/puce_liste.gif) 7px 7px no-repeat; */
+	overflow:hidden;
+
+	_padding-left: 7px;
+	_background: none;
+	_list-style-position: inside;
+}
+
+.cms_bloc ol li{
+	padding-left: 7px;
+}
+
+.cms_part{
+	text-align: left;
+	margin: 0 auto;
+}
+
+.cms_bandeau{
+}
+
+.cms_page{
+}
+
+.cms_gauche{
+}
+
+.cms_droite{
+}
+
+.cms_gauche, .cms_droite{
+	float: left;
+}
+
+.cms_zone{
+}
+
+.cms_bloc{
+	padding: 5px 0;
+	clear: both;
+}
+
+/*** BLOCS FILE ***/
+.cms_bloc_file{
+}
+
+/*** BLOCS FORM ***/
+.cms_bloc_form{
+}
+
+.cms_bloc_form table td{
+	padding: 3px;
+}
+
+.cms_bloc_form table td.intitule{
+	font-weight: bold;
+	text-align: left;
+	width: 200px;
+	vertical-align: top;
+}
+
+.cms_bloc_form table td.valeur td{
+	vertical-align: middle;
+}
+
+
+.cms_bloc_form label{
+	padding: 0 15px 0 3px;
+}
+
+.cms_bloc_form input{
+	width: 200px;
+}
+
+.cms_bloc_form textarea{
+	width: 300px;
+	height: 100px;
+}
+
+.cms_bloc_form select{
+	width: 204px;
+}
+
+.cms_bloc_form_error{
+	color: #FF0000;
+	padding-bottom: 10px;
+}
+
+.cms_bloc_form_message{
+	font-weight: bold;
+	text-align: center;
+}
+
+.cms_bloc_form .cms_bloc_form_field_content{
+	text-align: justify;
+}
+
+.cms_bloc_form table td.cms_bloc_form_field_antispam,
+.cms_bloc_form table td.cms_bloc_form_field_antispam_text{
+	width: auto;
+}
+
+.cms_bloc_form table td.cms_bloc_form_field_antispam_image{
+	text-align: right;
+}
+
+.cms_bloc_form table td.cms_bloc_form_field_antispam_image img{
+	border: 1px solid #000000;
+}
+
+.cms_bloc_form .cms_bloc_form_field_content, .cms_bloc_form table td.cms_bloc_form_field_antispam_text{
+	padding: 10px 0;
+}
+
+.cms_bloc_form .cms_bloc_form_field_checkbox input{
+	width: auto;
+}
+
+.cms_bloc_form .cms_bloc_form_field_checkbox table td{
+	padding: 0;
+}
+
+.cms_bloc_form .cms_bloc_form_field_radio table td{
+	padding: 0 0;
+}
+
+.cms_bloc_form .cms_bloc_form_field_radio input{
+	width: auto;
+}
+
+.cms_bloc_form .cms_bloc_form_field_submit input{
+	width: 85px;
+	margin: 5px 0;
+}
+
+/*** BLOCS HTML ***/
+.cms_bloc_html{
+}
+
+/*** BLOCS MEDIA ***/
+.cms_bloc_media{
+	text-align: center;
+}
+
+.cms_bloc_media *{
+	border: 0;
+	margin: 0 auto;
+}
+
+/*** BLOCS MODULE ***/
+.cms_bloc_module{
+}
+
+/*** BLOCS MAP ***/
+.cms_bloc_map .mm_carte{
+	margin: auto;
+}
+
+.cms_bloc_map .mm_carte .mm_info_photo{
+	float: left;
+	padding: 0 5px 5px 0;
+}
+
+.cms_bloc_map .mm_carte .mm_info_titre{
+	font-weight: bold;
+}
+
+.cms_bloc_map .mm_carte .mm_info_resume{
+}
+
+/*** BLOCS TEXTE ***/
+.cms_bloc_text{
+	text-align: justify;
+}
+
+.cms_bloc_text table{
+	width: 100%;
+	border-collapse: collapse;
+	border-color: #000000;
+}
+
+.cms_bloc_text table th, .cms_bloc_text table td{
+	border-color: #000000 !important;
+}
+
+.cms_bloc_text table td{
+	vertical-align: top;
+}
+
+.cms_bloc_text_media_gauche{
+}
+
+.cms_bloc_text_media_gauche .cms_bloc_media{
+	position: relative;
+	z-index: 2;
+	padding: 0;
+	margin: 0;
+	float: left;
+	padding: 0 15px 15px 0;
+}
+
+.cms_bloc_text_media_droite{
+}
+
+.cms_bloc_text_media_droite .cms_bloc_media{
+	position: relative;
+	z-index: 2;
+	padding: 0;
+	margin: 0;
+	float: right;
+	padding: 0 0 15px 15px;
+}
+
+.cms_bloc_text_haut{
+}
+
+.cms_bloc_text_media_centre{
+	text-align: center;
+	padding: 15px auto;
+}
+
+.cms_bloc_text_media_centre .cms_bloc_media{
+	margin: 15px 0;
+}
+
+.cms_bloc_text_bas{
+}
+
+.cms_bloc_text table{
+	width: 100%;
+}
+
+.cms_bloc_text table td{
+	vertical-align: top;
+}
+
+.cms_bloc_text_gauche{
+	width: 49%;
+}
+
+.cms_bloc_text_milieu{
+	width: 2%;
+}
+
+.cms_bloc_text_droite{
+	width: 49%;
+}
+
+/*** BLOCS TITRE ***/
+.cms_bloc_title{
+}
+
+.cms_bloc_title h2{
+}
+
+/*** ***/
+.spacer{
+	clear: both;
+	line-height: 0;
+	width: 0;
+	font-size: 0;
+}#wge_contenu img{
+border : 1px solid #777777;
+}
+
+
+/******  GENERALITE  ******/
+body, td, pre, input, textarea, select{
+	font-family: "Trebuchet MS", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+html {
+	background: #e9dfda url(../../images/librairieSaintNicolas/bg_page.gif) center 0 repeat-y;
+	margin : 0;
+	padding : 0;
+}
+
+body{
+
+	text-align: center;
+	color: #000;
+}
+a{
+	color: #FF6D2B;
+	text-decoration: underline;
+}
+a:hover{
+	text-decoration: none;
+}
+
+.wge_contener{
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	width: 990px;
+	text-align: left;
+}
+
+.cms_bloc_title h2 {
+	text-align: left;
+	font-size: 24px;
+	line-height : 28px;
+	color: #ff6d2b;
+	background: url(../../images/librairieSaintNicolas/puce_titre.html) 0 1px no-repeat;
+}
+
+
+/******  STYLE DES LISTES  ******/
+
+#wge_contenu ul,
+#wge_contenu ol{
+	font-family: Arial, "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	position: relative;
+	padding: 5px 0;
+	line-height: 16px;
+	font-size: 13px;
+}
+#wge_contenu ol{
+	list-style-position: inside;
+}
+#wge_contenu ul{
+	list-style-type: none;
+	_list-style-type: disc;
+}
+
+#wge_contenu ul li{
+	padding-left: 23px;
+	background: url(../../images/librairieSaintNicolas/puce_liste.gif) 9px 6px no-repeat;
+	overflow:hidden;
+
+	_padding-left: 7px;
+	_background: none;
+	_list-style-position: inside;
+}
+#wge_contenu ol li{
+	padding-bottom: 6px;
+	padding-left: 7px;
+}
+
+
+/******  BANDEAU  ******/
+
+#wge_zone_bandeau {
+	z-index : 2;
+}
+
+#wge_bandeau{
+	position: relative;
+	z-index:1;
+	background: #e9dfda url(../../images/librairieSaintNicolas/bandeau.jpg) 0 0 no-repeat;
+	height: 246px;
+}
+
+#wge_bandeau h1{
+	color : #FFF;
+	float : right;
+	font-size: 10px;
+	font-weight : bold;
+	line-height : 15px;
+	padding-right : 25px;
+	width : 300px;
+}
+
+#wge_zone_menu {
+	bottom : 3px;
+	margin : 0 13px;
+	position : absolute;
+	width : 964px;
+	z-index: 10;
+}
+
+
+/******  LIEN : ACCUEIL, IMPRESSION, PLAN DU SITE  ******/
+
+#wge_lien_accueil{
+	display: block;
+	height: 80px;
+	left: 400px;
+	position: absolute;
+	top: 0;
+	width: 220px;
+}
+
+#wge_header_liens {
+	float : right;
+	padding-top : 10px;
+	width : 142px;
+}
+
+a#wge_lien_plan,
+a#wge_lien_print{
+	color: #770500;
+	display: block;
+	float : left;
+	font-size:9px;
+	height: 20px;
+	line-height : 16px;
+	margin-right : 10px;
+	overflow : hidden;
+	text-align: right;
+	text-indent : 5000px;
+	text-transform : uppercase;
+	width : 20px;
+}
+
+
+/******  FIL D'ARIANE  ******/
+#wge_ariane{
+	color: #000;
+	font-family: Arial, "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight : bold;
+	padding-bottom : 2px;
+	padding-top : 8px;
+	padding-left : 14px;
+}
+#wge_ariane a{
+	color: #000;
+	text-decoration: none;
+}
+#wge_ariane a:hover{
+	text-decoration: underline;
+}
+#wge_ariane .puce_ariane{
+	background: url(../../images/librairieSaintNicolas/sep_ariane.gif) 3px 4px no-repeat;
+	padding-left: 13px;
+}
+
+
+/******  PAGE  ******/
+
+#wge_zone_page {
+	z-index : 1;
+}
+
+#wge_page,
+#wge_page_top_gauche,
+#wge_page_top_droite,
+#wge_gauche,
+#wge_contenu,
+#wge_droite {
+	position: relative;
+	z-index: 1;
+	float: left;
+}
+#wge_page{
+	min-height : 600px;
+	height : auto;
+	_height : 600px;
+	padding : 10px 23px 0;
+	width : 944px;
+}
+
+#wge_page_top {
+	height : 145px;
+	margin : 0 37px 10px;
+}
+
+#wge_page_top_gauche {
+	background: #FFF url(../../images/librairieSaintNicolas/choix_librairie.gif) 0 12px no-repeat;
+	height : 35px;
+	padding-left : 10px;
+	padding-top : 110px;
+	width : 235px;
+}
+
+#wge_page_top_gauche a {
+	margin-right : 15px;
+}
+
+#wge_page_top_droite {
+	height : 145px;
+	overflow : hidden;
+	width : 625px;
+}
+
+#wge_page_top_droite .cms_bloc {
+	clear : none;
+	_display : inline; /* Bug double marge IE6 */
+	float : left;
+	margin-left : 35px;
+	padding : 0;
+}
+
+#wge_page_top_droite .spacer {
+	clear : none;
+	display : none;
+}
+
+#wge_gauche {
+	margin-right : 15px;
+	width : 735px;
+}
+
+#wge_contenu {
+	background-color : #f7f7f7;
+	padding : 12px;
+	width : 710px;
+}
+
+#wge_droite {
+	width : 193px;
+}
+
+#itineraire {
+	margin : 2px 0 10px;
+}
+
+
+/******  PIED DE PAGE  ******/
+
+#wge_footer{
+	background: #b4b4b4 url(../../images/librairieSaintNicolas/bg_footer.gif) 170px center no-repeat;
+	color: #FFF;
+	font-size: 12px;
+	height : 48px;
+	line-height : 15px;
+	margin : 15px 23px;
+	padding : 10px 0 10px 370px;
+}
+
+#wge_footer_texte {
+	border-left : 1px solid #c0c0c0;
+	padding : 8px 20px;
+}
+
+a.wge_lien_footer{
+	text-decoration: none;
+	color: #FFF;
+}
+a.wge_lien_footer:hover{
+	text-decoration: underline;
+}
+#wge_footer_texte img{
+	margin-bottom: -2px;
+}
+#wge_menu dl, #wge_menu dt, #wge_menu dd, #wge_menu ul, #wge_menu li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#wge_menu{
+	float : left;
+	height: 36px;
+	padding : 0 5px;
+	width : 620px;
+}
+
+#wge_menu dl{
+	background: url(../../images/librairieSaintNicolas/sep_menu.html) right 0 no-repeat;
+	position: relative;
+	float: left;
+}
+
+#wge_menu dt{
+	position: relative;
+	cursor: pointer;
+	font-weight: bold;
+	height: 36px;
+	float: left;
+}
+
+#wge_menu dt a{
+	color: #000;
+	height: 36px;
+	line-height: 36px;
+	float: left;
+	_width: 1%;
+	_white-space: nowrap;
+	font-size: 13px;
+	padding : 0 10px;
+}
+
+#wge_menu dt.niv1_on {
+}
+
+#wge_menu dt.niv1_on a{
+	color: #FFF;
+}
+
+#wge_menu dd{
+	background : #efefef url(../../images/librairieSaintNicolas/bg_menu.gif) 25px 0 no-repeat;
+	border-top : 1px solid #676767;
+	display: none;
+	left: 0;
+	padding-top : 13px;
+	position: absolute;
+	top: 38px;
+	width : 220px;
+}
+
+#wge_menu dd,
+#wge_menu dd ul,
+#wge_menu dd li {
+	width : 220px;
+}
+
+#wge_menu li{
+	cursor: pointer;
+}
+
+#wge_menu li a, #wge_menu dt a{
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+#wge_menu li.niv2,
+#wge_menu li.niv2_on {
+	border-bottom : 1px solid #676767;
+}
+
+#wge_menu li.niv2 ul,
+#wge_menu li.niv2_on ul {
+	background-color : #adadad;
+	border-top : 1px solid #676767;
+}
+
+#wge_menu a.niv2{
+	background: #dcdcdc url(../../images/librairieSaintNicolas/puce_niv2.gif) 12px 7px no-repeat;
+	color: #676767;
+	display: block;
+	padding-left : 22px;
+	padding-right : 15px;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+#wge_menu li.niv2_on a.niv2{
+	background-color : #c0c0c0;
+	background-image : url(../../images/librairieSaintNicolas/puce_niv2_on.gif);
+}
+
+#wge_menu li.niv3,
+#wge_menu li.niv3_on{
+	line-height: 14px;
+}
+#wge_menu a.niv3{
+	color: #FFF;
+	font-size: 10px;
+	font-weight : bold;
+	padding: 2px 10px 2px 25px;
+	text-decoration: none;
+	width: 137px;
+}
+
+#wge_menu li.niv3_on  a.niv3{
+	text-decoration : underline;
+}
+.surtitre{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.soustitre{
+	color : #777;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.accroche 1{
+	background: url(../../images/librairieSaintNicolas/puce_soustitre.gif) 0 2px no-repeat;
+	color: #000;
+	font-weight: bold;
+	font-size: 15px;
+	line-heigth : 18px;
+	padding-left : 20px;
+}
+
+.accroche 2{
+	color : #9b9b9b;
+}
+
+.chapo{
+	font-weight: bold;
+}
+
+.intertitre{
+	background: transparent url(../../images/librairieSaintNicolas/puce_intertitre.gif) 0 5px no-repeat;
+	color: #9b9b9b;
+	display : block;
+	font-family: Arial, "Trebuchet MS", Verdana, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	padding : 3px 22px;
+	text-decoration : underline;
+}
+
+.legende{
+	font-style: italic;
+	font-size: 11px;
+}
+
+.mise_en_avant_1{
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration : underline;
+}
+
+.mise_en_avant_2{
+	text-decoration : underline;
+}
+
+.infos_article {
+	background: url(../../images/librairieSaintNicolas/bg_infos_article.gif) 0 0 repeat-x;
+	color : #cacac8;
+	display : block;
+	font-size : 11px;
+	height : 23px;
+	line-height : 20px;
+	padding : 0 10px;
+	width : 690px;
+}
