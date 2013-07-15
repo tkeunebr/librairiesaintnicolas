@@ -1,5 +1,5 @@
-/**************  MENU  ****************/	
-	
+/**************  MENU  ****************/
+
 	var niv1_on = null;
 	var d = null;
 	var delais = 500;
@@ -42,7 +42,3 @@
 		}
 		html_obj.className = 'niv'+indice+'_on' ;
 	}
-	function clic_hover(html_obj){
-		table_html_a = html_obj.getElementsByTagName("a");
-		window.location.replace(table_html_a[0].getAttribute("href"));
-	};
