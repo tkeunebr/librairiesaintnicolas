@@ -144,14 +144,14 @@
 <p>&nbsp;</p>
 
 <center>
-<form action="mailto:qkeunebr@gmail.com?subject=Fomulaire Mon javascript" name="envoi" method=POST enctype="text/plain" onsubmit="return validateForm()">
+<form action="mailto:qkeunebr@gmail.com?subject=Fomulaire Mon javascript" name="envoi" method=POST enctype="text/plain">
 <table border="0"><tr><td>
-<b>Nom : </b><input name="nom"size=50 maxlength=50 required><br>
-<b>Prenom : </b><input name="prenom"size=50 maxlength=50 required><br>
-<b>Adresse email : </b><input name="email"size=50 maxlength=50 required><br>
+<b>Nom : </b><input name="nom"size=50 maxlength=50 required data-message="Veuillez renseigner votre nom."><br>
+<b>Prenom : </b><input name="prenom"size=50 maxlength=50 required  data-message="Veuillez renseigner votre prénom."><br>
+<b>Adresse email : </b><input name="email"size=50 maxlength=50 required data-message="Veuillez renseigner votre email."><br>
 <b>Numéro de téléphone (facultatif) : </b><input name="num"size=50 maxlength=50><br>
-<b>Titre : </b><input name="titre"size=50 maxlength=50 required><br>
-<b>Auteur : </b><input name="auteur"size=50 maxlength=50 required><br>
+<b>Titre : </b><input name="titre"size=50 maxlength=50 required data-message="Veuillez renseigner le titre du livre."><br>
+<b>Auteur : </b><input name="auteur"size=50 maxlength=50 required data-message="Veuillez renseigner l'auteur du livre."><br>
 <b>Editeur : </b><input name="editeur"size=50 maxlength=50><br>
 </td></tr></table><br>
 <input type="submit" value="Envoyer" name="Envoyer">
@@ -210,36 +210,6 @@
 			})();
 		</script>
 
-<script type="text/javascript">
-		function validateForm() {
-    var p = document.forms["envoi"]["prenom"].value;
-    if (p == null || p == "") {
-        alert("Veuillez renseigner votre prénom.");
-        return false;
-    }
-    var n = document.forms["envoi"]["nom"].value;
-    if (n == null || n == "") {
-        alert("Veuillez renseigner votre nom.");
-        return false;
-    }
-    var e = document.forms["envoi"]["email"].value;
-    if (e == null || e == "") {
-        alert("Veuillez renseigner votre email.");
-        return false;
-    }
-    var t = document.forms["envoi"]["titre"].value;
-    if (t == null || t == "") {
-        alert("Veuillez renseigner le titre du livre.");
-        return false;
-    }
-    var a = document.forms["envoi"]["auteur"].value;
-    if (a == null || a == "") {
-        alert("Veuillez renseigner l'auteur du livre.");
-        return false;
-    }
-}
-}
-</script>
 
 	</body>
 </html>
