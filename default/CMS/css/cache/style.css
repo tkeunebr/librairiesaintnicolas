@@ -1,8 +1,6 @@
-input{
-width : 150px;
-  margin: 0;
 
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
-}
+.form{background:#fff; width:700px; margin:0 auto; padding:30px; box-sizing:border-box}
+.form input{display:block; width:100%; border:none; border-bottom:solid 1px #ccc; color:#2196F3; padding:20px 20px 20px 0; box-sizing:border-box; outline:none; font-family:'Open Sans',sans-serif; font-size:20px}
+.line{display:block; background:#2196F3; height:3px; margin:0 auto; margin-top:-2px; width:0px; transition:width  .3s cubic-bezier(0.4,0,0.2,1)}
+.form input:focus + span.line{width:100%}
+#send{width:50%; margin:0 auto; margin-top:30px; background:#2196F3; border-bottom:none; color:#fff; cursor:pointer}
