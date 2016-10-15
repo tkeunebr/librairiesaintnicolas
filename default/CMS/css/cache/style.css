@@ -16,6 +16,7 @@
     display: block;
     margin-bottom: 10px;
     min-height: 35px;
+     list-style:none !important;
 }
 .form-style-9 ul li  .field-style{
     box-sizing: border-box; 
