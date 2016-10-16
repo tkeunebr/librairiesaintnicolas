@@ -19,9 +19,11 @@
     <link rel="stylesheet" type="text/css" href="default/CMS/css/cache//bootstrap-responsive.css"/>
     <script type="text/javascript" src="default/CMS/js/cache/6fa49137d953340981d1ac1258f5bb27.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-sanitize.js" type="text/javascript"></script>
+    <script type="text/javascript" src="site.js"></script> 
 </head>
 
-<body>
+<body ng-app="LibraryWebsite" ng-controller='MainController as LibraryWebsite'>
     <a id="haut"></a>
     <div id="wge_zone_bandeau" class="wge_contener">
         <div id="wge_bandeau">
@@ -115,7 +117,7 @@
                         <p>Fax, photocopie (noir ou couleur), impression à partir d'une clé USB, commande de vos&nbsp;cartes de visite...</p>
                         <p>&nbsp;</p>
                         <h3>
-                        <strong>Commandes de livres</strong>
+                        <strong>Commande de livres</strong>
                         </h3>
                         <ol>
                         	<li>Remplissez le formulaire ci-dessous (n'oubliez pas de renseigner votre adresse mail). Si vous désirez plusieurs livres, n'hésitez pas à le remplir plusieurs fois.</li>

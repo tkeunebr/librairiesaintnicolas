@@ -159,3 +159,38 @@ clear:left;
          transform: scale(1.5);
          z-index:5;
 }
+
+.modal-footer{
+  margin-top:0px;
+  padding:5px;
+  background-color: #3D3D3D;
+  color:#C0C0C0;
+  text-align: left;
+  font-family: 'Roboto',sans-serif;;
+}
+
+.modal-footer a{
+  color:#C0C0C0;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #3D3D3D;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: none;
+}
+
+ .lettrine {
+  font-size:10%;
+  float: left;
+  padding: 7px;
+}
+
+.modal{
+  margin-top:90px;
+}
