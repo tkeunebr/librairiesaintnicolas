@@ -19,6 +19,8 @@
 		        <link rel="stylesheet" type="text/css" href="default/CMS/css/cache//bootstrap-responsive.css"/>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 		<script type="text/javascript" src="default/CMS/js/cache/6fa49137d953340981d1ac1258f5bb27.js"></script>
 		<script type="text/javascript" src="librairie.js"></script>
 	</head>
@@ -108,7 +110,7 @@
 
 			<div  ng-app="LibrairieSection" ng-controller="LibrairieController">
 		<div class="cms_bloc cms_bloc_title">
-			<h3>Au Plessis on lit !</h3>
+			<h3>Au Plessis on lit...</h3>
 		</div>
 		<br><br>
 		<div ng-repeat="livre in lectures">
@@ -137,8 +139,72 @@
                 </div>   
               </div>
               </div>
+
+              <div class="cms_bloc cms_bloc_title">
+			<h3>À découvrir...</h3>
+		</div>
+		<br><br>
+		<div ng-repeat="livre in decouvertes">
+			<div class="row" id="livres">
+            	<div class="span3">
+                  <div class="padded">
+                    <div class="asideproject">
+                      <div id="bulle">
+                      </div>
+                        <div class="imageaside">
+                        <img ng-src="{{livre.image}}" id="image">
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="span4">
+                <div class="padded">
+                <div class="page-header">
+                  <h2>{{livre.titre}} <small>({{livre.auteur}})</small></h2>
+                </div>
+                	<p id="commentaire">{{livre.commentaire}}</p>
+                	<br>
+                    <p id="prix"><b>{{livre.prix}}<b></p><br>
+                    <p id="disponible"><b>{{livre.disponible}}<b></p><br>
+                </div>
+                </div>   
+              </div>
+              </div>
+
+
+              <div class="cms_bloc cms_bloc_title">
+			<h3>On a lu pour vous...</h3>
+		</div>
+		<br><br>
+		<div ng-repeat="livre in conseils">
+			<div class="row" id="livres">
+            	<div class="span3">
+                  <div class="padded">
+                    <div class="asideproject">
+                      <div id="bulle">
+                      </div>
+                        <div class="imageaside">
+                        <img ng-src="{{livre.image}}" id="image">
+                        </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="span4">
+                <div class="padded">
+                <div class="page-header">
+                  <h2>{{livre.titre}} <small>({{livre.auteur}}) <i class="fa fa-heart" aria-hidden="true"></i></small></h2>
+                </div>
+                	<p id="commentaire">{{livre.commentaire}}</p>
+                	<br>
+                    <p id="prix"><b>{{livre.prix}}<b></p><br>
+                    <p id="disponible"><b>{{livre.disponible}}<b></p><br>
+                </div>
+                </div>   
+              </div>
+              </div>
 	</div>
 
+	
 
 
 <p> </p>
