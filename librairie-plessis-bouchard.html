@@ -106,68 +106,65 @@
 			<span class="soustitre">Nouveautés littéraires ou livres de poche, beaux livres ou manuels scolaires, romans en langue étrangère ou dictionnaires, albums à colorier ou contes pour enfants :</span><br /><br>
 
 
-			<div  ng-app="LibrairieSection" ng-controller="LibrairieController">
-		<div class="cms_bloc cms_bloc_title">
-			<h3>Au Plessis on lit...</h3>
-		</div>
-		<br><br>
-		<div ng-repeat="livre in lectures">
-			<div class="row" id="livres">
+	<div ng-app="LibrairieSection" ng-controller="LibrairieController">
+    	<div class="cms_bloc cms_bloc_title">
+        	<h3>Au Plessis on lit...</h3>
+    	</div>
+    	<br>
+    	<br>
+    	<div ng-repeat="livre in lectures">
+        	<div class="row" id="livres">
             	<div class="span3">
-                  <div class="padded">
-                    <div class="asideproject">
-                      <div id="bulle">
-                      </div>
-                        <div class="imageaside">
-                        <img ng-src="{{livre.image}}" id="image">
-                        </div>
-                    </div>
-                  </div>
-                </div> 
-                <div class="span4">
-                <div class="padded">
-                <div class="page-header">
-                  <h2>{{livre.titre}} <small>({{livre.auteur}})</small></h2>
-                </div>
-                	<p id="commentaire">{{livre.commentaire}}</p>
-                	<br>
-                    <p id="prix"><b>{{livre.prix}}<b></p><br>
-                    <p id="disponible"><b>{{livre.disponible}}<b></p><br>
-                </div>
+                	<div class="padded">
+                    	<div class="asideproject">
+                        	<div class="imageaside">
+                            	<img ng-src="{{livre.image}}" id="image">
+                       	 	</div>
+                    	</div>
+                	</div>
+            	</div>
+            	<div class="span4">
+                	<div class="padded">
+                    	<div class="page-header">
+                        	<h2>{{livre.titre}} <small>({{livre.auteur}})</small></h2>
+                    	</div>
+                    	<p id="commentaire">{{livre.commentaire}}</p>
+                    	<br>
+                    	<p id="prix"><b>{{livre.prix}}</b></p><br>
+                    	<p id="disponible"><b>{{livre.disponible}}</b></p><br>
+                	</div>
                 </div>   
-              </div>
-              </div>
+            </div>
+        </div>
 
-              <div class="cms_bloc cms_bloc_title">
+        <div class="cms_bloc cms_bloc_title">
 			<h3>À découvrir...</h3>
 		</div>
 		<br><br>
 		<div ng-repeat="livre in decouvertes">
 			<div class="row" id="livres">
             	<div class="span3">
-                  <div class="padded">
-                    <div class="asideproject">
-                      <div id="bulle">
-                      </div>
-                        <div class="imageaside">
-                        <img ng-src="{{livre.image}}" id="image">
-                        </div>
-                    </div>
-                  </div>
+                  	<div class="padded">
+                    	<div class="asideproject">
+                        	<div class="imageaside">
+                        		<img ng-src="{{livre.image}}" id="image">
+                        	</div>
+                    	</div>
+                  	</div>
                 </div> 
                 <div class="span4">
-                <div class="padded">
-                <div class="page-header">
-                  <h2>{{livre.titre}} <small>({{livre.auteur}})</small></h2>
-                </div>
-                	<p id="commentaire">{{livre.commentaire}}</p>
-                	<br>
-                    <p id="prix"><b>{{livre.prix}}<b></p><br>
-                    <p id="disponible"><b>{{livre.disponible}}<b></p><br>
-                </div>
+                	<div class="padded">
+                		<div class="page-header">
+                  			<h2>{{livre.titre}} <small>({{livre.auteur}})</small></h2>
+                		</div>
+                		<p id="commentaire">{{livre.commentaire}}</p>
+                		<br>
+                    	<p id="prix"><b>{{livre.prix}}</b></p><br>
+                    	<p id="disponible"><b>{{livre.disponible}}</b></p><br>
+                	</div>
                 </div>   
-              </div>
-              </div>
+            </div>
+        </div>
 
 
               <div class="cms_bloc cms_bloc_title">
@@ -194,8 +191,8 @@
                 </div>
                 	<p id="commentaire">{{livre.commentaire}}</p>
                 	<br>
-                    <p id="prix"><b>{{livre.prix}}<b></p><br>
-                    <p id="disponible"><b>{{livre.disponible}}<b></p><br>
+                    <p id="prix"><b>{{livre.prix}}</b></p><br>
+                    <p id="disponible"><b>{{livre.disponible}}</b></p><br>
                 </div>
                 </div>   
               </div>
