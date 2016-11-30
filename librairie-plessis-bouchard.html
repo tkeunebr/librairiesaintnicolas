@@ -107,12 +107,13 @@
 
 
 	<div ng-app="LibrairieSection" ng-controller="LibrairieController">
+		<hr>
     	<div class="cms_bloc cms_bloc_title">
         	<h3>Au Plessis on lit...</h3>
     	</div>
     	<br>
     	<br>
-    	<div ng-repeat="livre in lectures">
+    	<div ng-repeat="livre in lectures | reverse">
         	<div class="row" id="livres">
             	<div class="span3">
                 	<div class="padded">
@@ -136,12 +137,12 @@
                 </div>   
             </div>
         </div>
-
+        <hr>
         <div class="cms_bloc cms_bloc_title">
 			<h3>À découvrir...</h3>
 		</div>
 		<br><br>
-		<div ng-repeat="livre in decouvertes">
+		<div ng-repeat="livre in decouvertes | reverse">
 			<div class="row" id="livres">
             	<div class="span3">
                   	<div class="padded">
@@ -166,12 +167,12 @@
             </div>
         </div>
 
-
+        <hr>
               <div class="cms_bloc cms_bloc_title">
 			<h3>On a lu pour vous...</h3>
 		</div>
 		<br><br>
-		<div ng-repeat="livre in conseils">
+		<div ng-repeat="livre in conseils | reverse">
 			<div class="row" id="livres">
             	<div class="span3">
                   <div class="padded">
@@ -197,6 +198,7 @@
                 </div>   
               </div>
               </div>
+              <hr>
 	</div>
 
 	

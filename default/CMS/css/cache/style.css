@@ -242,4 +242,13 @@ clear:left;
 #disponible{
   text-align:center;
 }
+#event{
+      border: 6px solid #00aced;
+      background: #FAFAFA;
+    padding: 10px;
+          box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+        margin: 20px auto;
+            max-width: 450px;
+}
 
